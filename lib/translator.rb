@@ -15,7 +15,7 @@ def get_japanese_emoticon(str_w)
   # code goes here
   emotos.each do |emo, dic_emo|
     if str_w == dic_emo[:english]
-      return dic_emo[:english]
+      return dic_emo[:japanese]
     end
   end
 end
