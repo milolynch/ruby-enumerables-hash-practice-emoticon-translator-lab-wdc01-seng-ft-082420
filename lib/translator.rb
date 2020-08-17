@@ -1,6 +1,6 @@
 # require modules here
 require "yaml"
-binding "pry"
+require "pry"
 
 def load_library(lib)
   # code goes here
