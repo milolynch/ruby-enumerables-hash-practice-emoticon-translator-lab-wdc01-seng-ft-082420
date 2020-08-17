@@ -11,8 +11,9 @@ def load_library(lib)
   end
 end
 
-def get_japanese_emoticon(str_w)
+def get_japanese_emoticon(lib, str_w)
   # code goes here
+  load_library(lib)
   emotos.each do |emo, dic_emo|
     if str_w == dic_emo[:english]
       return dic_emo[:japanese]
@@ -20,6 +21,7 @@ def get_japanese_emoticon(str_w)
   end
 end
 
-def get_english_meaning
+def get_english_meaning(lib ,str_j)
+  load_library(lib)
   # code goes here
 end
