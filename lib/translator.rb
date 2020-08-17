@@ -11,8 +11,11 @@ def load_library(lib)
   end
 end
 
-def get_japanese_emoticon
+def get_japanese_emoticon(str)
   # code goes here
+  emotos.each do |lag, ary|
+    
+  end
 end
 
 def get_english_meaning
