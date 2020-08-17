@@ -24,4 +24,9 @@ end
 def get_english_meaning(lib ,str_j)
   load_library(lib)
   # code goes here
+  emotos.each do |emo, dic_emo|
+    if str_j == dic_emo[:japanese]
+      return dic_emo[:english]
+    end
+  end
 end
