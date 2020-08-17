@@ -5,7 +5,8 @@ require "yaml"
 def load_library(lib)
   # code goes here
   emotos = YAML.load_file(lib)
-  puts "h"
+  #superloop through NDS emotos and change each ary to a hash
+  
 end
 
 def get_japanese_emoticon
