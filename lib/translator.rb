@@ -7,6 +7,7 @@ def load_library(lib)
   emotos = YAML.load_file(lib)
   #superloop through NDS emotos and change each ary to a hash
   emotos.each do |key, ary|
+    ary 
     emotos[key] = {ary[0] => ary[1]}
   end
   binding.pry
