@@ -9,7 +9,6 @@ def load_library(lib)
   emotos.each do |key, ary|
     emotos[key] = { :english => ary[0], :japanese => ary[1] }
   end
-  binding.pry
 end
 
 def get_japanese_emoticon
