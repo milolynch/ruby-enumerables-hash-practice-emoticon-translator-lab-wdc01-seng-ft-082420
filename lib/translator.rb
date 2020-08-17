@@ -26,8 +26,7 @@ def get_english_meaning(lib ,str_j)
   load_library(lib).each do |emo, dic_emo|
     if str_j == dic_emo[:japanese]
       return emo
-    else
-      return "Sorry, that emoticon was not found"
     end
   end
+  return "Sorry, that emoticon was not found"
 end
