@@ -13,12 +13,12 @@ end
 
 def get_japanese_emoticon(lib, str_w)
   # code goes here
-  load_library(lib)
-  emotos.each do |emo, dic_emo|
+  load_library(lib).each do |emo, dic_emo|
     if str_w == dic_emo[:english]
       return dic_emo[:japanese]
     end
   end
+  return "Sorry, that emoticon was not found"
 end
 
 def get_english_meaning(lib ,str_j)
