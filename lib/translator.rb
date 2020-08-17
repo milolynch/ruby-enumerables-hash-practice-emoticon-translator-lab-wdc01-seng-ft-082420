@@ -25,7 +25,7 @@ def get_english_meaning(lib ,str_j)
   # code goes here
   load_library(lib).each do |emo, dic_emo|
     if str_j == dic_emo[:japanese]
-      return dic_emo[:english]
+      return emo
     end
   end
 end
